@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <style>
+   /*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');*/
+    *{
+      margin: 0;
+      padding: 0;
+      font-family:'Arial';
+      box-sizing:border-box;
+    }
+    .profile-card{
+      height:500px;
+      width: 400px;
+      background-color: #fff;
+      border-radius: 20px;
+      margin: 20px;
+      box-shadow: 0px 2px 10px black;
+    }
+    .image{
+      background-color:#0A66C2;
+      height:200px;
+      border-radius: 20px 20px 0 0;
+      object-fit:cover;
+    }
+    .Profile-img{
+      position: relative;
+      top:40px;
+      left:85px;
+      height:180px;
+      width:204px;
+     border-radius: 50%;
+     border:3px solid #fff;
+    }
+    .profile-card::after{
+     /* content:"Joseph Rush";*/
+    }
+    h1{
+      margin-top: 25px;
+      margin-left: 105px;
+      font-size: 25px;
+    }
+    h3{
+      text-decoration: none;
+      opacity:0.6;
+      margin-top: 10px;
+      margin-left: 88px;
+      font-size: 17px;
+    }
+    .subscribe{
+      background-color: #0A66C2;
+      height:35px;
+      width:99px;
+      border-radius: 18px;
+      padding-bottom: 1px;
+      color:#fff;
+      border:1px solid #0A66C2;
+      margin-top: 90px;
+      margin-left:80px;
+    }
+    .message{
+      background-color: #0A66C2;
+      height:35px;
+      width:99px;
+      border-radius: 18px;
+      padding-bottom: 1px;
+      color:#fff;
+      border:1px solid #0A66C2;
+      margin-top: 90px;
+      margin-left:30px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="profile-card">
+    <div class="image">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWoaBcEJMpEgt-jM_OVKUDQzCJm9BCO19iVw&usqp=CAU" alt="Profile photo" class="Profile-img">
+    </div>
+    <h1>Joseph Rush</h1>
+    <h3>Data Analyst & Developer</h3>
+    <button class="subscribe">Subscribe</button>
+    <button class="message">Message</button>
+  </div>
+</body>
+</html>
