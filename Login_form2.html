@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+        }
+        body{
+            text-align: center;
+            background-color: grey;
+            height:100vh;
+            overflow:hidden;
+        }
+        .container{
+            position: absolute;
+            top:20%;
+            left:30%;
+            height:420px;
+            width:400px;
+            background-color: #fff;
+            border-radius: 10px;
+            border:none;
+        }
+        .title{
+            height:70px;
+            border-top-left-radius: 10px;
+            border-top-right-radius:10px ;
+            text-align: center;
+            line-height: 70px;
+            font-size: 30px;
+            background: linear-gradient(to right,rgb(73, 4, 123)20%,rgb(240, 26, 136));
+            color:#fff;
+            font-weight:500;
+        }
+        input{
+            width:350px;
+            height:39px;
+            border-radius: 20px;
+            border:1px solid rgb(114, 113, 113);
+        }
+        .elabel{
+            position:absolute;
+            top:25%;
+            left:11%;
+            font-size:14px;
+            color:rgb(114, 113, 113);
+        }
+        .elabel:focus{
+            transform:translateY(-140%);
+            background:;
+        }
+        .plabel:focus{
+            transform:translateY(-140%);
+        }
+        .plabel{
+            position:absolute;
+            top:40%;
+            left:11%;
+            font-size:14px;
+            color:rgb(114, 113, 113);
+        }
+        .Email_add{
+            margin:20px;
+        }
+        .pass{
+            margin: 24px;
+        }
+        .Email{
+            padding-left:15px;
+        }
+        .passwd{
+            padding-left:7px;
+        }
+        .rember{
+            margin-left: -200px;  
+        }
+        .check{
+            height:15px;
+            width:15px;
+        }
+        .forgot_pass{
+            position:absolute;
+            top:51%;
+            left:64%;
+            font-size:15px;
+            color: rgb(25, 25, 182);
+        }
+        .forgot_pass:hover{
+            text-decoration: underline;
+        }
+        button{
+            background: linear-gradient(to right,rgb(73, 4, 123)20%,rgb(240, 26, 136));
+            height:36px; 
+            width:330px;
+            border-radius: 20px;
+            margin:25px;
+            font-size:17px;
+            color: #fff;
+            border:none;
+        }
+        .end{
+            margin:12px;
+            font-size:17px;
+        }
+        a{
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="post">
+        <div class="title">
+            Login Form
+        </div>
+        <div class="Email_add">
+            <input "Email" type="email" id="email">
+            <label class="elabel" for="email">Email Address</label>
+        </div>
+        <div class="pass">
+            <input class="passwd" type="password" id="paswd">
+            <label class="plabel" for="paswd">Password</label>
+        </div>
+        <div class="rember">
+            <input class="check" type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+        </div>
+        <div class="forgot_pass">Forgot password?</div>
+        <button>Login</button>
+        <div class="end">Not a member?<a href="#">Signup now</a></div>
+        </form>
+    </div>
+</body>
+</html>
