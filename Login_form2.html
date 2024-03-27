@@ -51,12 +51,15 @@
             font-size:14px;
             color:rgb(114, 113, 113);
         }
-        .elabel:focus{
-            transform:translateY(-140%);
-            background:;
+        form input:active ~ .elabel,
+        form input:valid ~ .elabel{
+            background-color: #fff;
+            transform: translateY(-130%);
         }
-        .plabel:focus{
-            transform:translateY(-140%);
+        form input:active ~ .plabel,
+        form input:valid ~ .plabel{
+            background-color: #fff;
+            transform: translateY(-120%);
         }
         .plabel{
             position:absolute;
